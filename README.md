@@ -1,70 +1,97 @@
 # Socket-Based System Monitor
 
-A system monitoring application built using a Python socket server and a Flutter mobile app.  
-The mobile app communicates with the Python server over a network to request and display system information.
+A system monitoring project using a **Python socket server** and a **Flutter mobile app**.
+The mobile app communicates with the server over a network to fetch and display system information.
 
 ---
 
 ## Overview
 
-This project consists of:
-- A **Python socket server** that handles client connections and executes system-related commands
-- A **database layer** to store command logs and system usage data
-- A **Flutter mobile application** that acts as a client and interacts with the server
+* Python socket server handles client requests and system commands
+* Database stores command logs and system usage data
+* Flutter mobile app acts as a remote client for monitoring
 
-The goal of the project is to demonstrate socket-based communication between a server and a mobile application.
+This project demonstrates **socket-based communication between a server and a mobile application**.
 
 ---
 
 ## Python Socket Server
 
-The Python server:
-- Listens for incoming socket connections
-- Accepts predefined command codes from the client
-- Returns system information such as CPU usage, RAM usage, uptime, disk usage, and OS details
-- Logs command activity and usage data in a database
+* Listens for socket connections
+* Processes predefined command codes
+* Returns system details (CPU, RAM, disk, uptime, OS info)
+* Logs command activity in a database
 
-Location:  
-`python-server/`
+**Location:** `python-server/`
 
 ---
 
 ## Mobile Application
 
-The mobile application:
-- Built using Flutter
-- Connects to the Python server using sockets
-- Sends commands and displays responses from the server
-- Provides a simple interface for monitoring system status remotely
+* Built using Flutter
+* Connects to the Python server via sockets
+* Sends commands and displays server responses
+* Provides a simple remote monitoring interface
 
-Location:  
-`mobile-app/`
+**Location:** `mobile-app/`
 
 ---
 
 ## Database
 
-The database is used to:
-- Store command execution logs
-- Track command status (success or failure)
-- Maintain historical system usage records
-
-The database is managed entirely by the Python server.
+* Stores command logs and execution status
+* Maintains system usage history
+* Fully managed by the Python server
 
 ---
 
 ## Communication Flow
 
-1. Mobile app sends a command to the server  
-2. Python server processes the request  
-3. Server fetches system data or performs the action  
-4. Result is sent back to the mobile app  
-5. Command details are logged in the database
+1. Mobile app sends a command
+2. Server processes the request
+3. System data/action is executed
+4. Response is sent back
+5. Command is logged in the database
+
+---
+
+## Project Structure
+
+```
+socket-based-system-monitor/
+│
+├── python-server/
+│   ├── server.py        # Main socket server
+│   ├── commands.py      # System command functions
+│   ├── database.py      # Database logic
+│   ├── check_db.py      # Database inspection utility
+│   └── client_test.py  # Socket testing client
+│
+├── mobile-app/
+│   ├── lib/
+│   │   ├── screens/
+│   │   │   ├── home_screen.dart
+│   │   │   └── connect_screen.dart
+│   │   └── services/
+│   │       └── socket_service.dart
+│   │
+│   ├── android/
+│   ├── ios/
+│   ├── windows/
+│   ├── linux/
+│   ├── macos/
+│   ├── web/
+│   ├── assets/
+│   ├── pubspec.yaml
+│   └── .gitignore
+│
+└── README.md
+```
 
 ---
 
 ## Technologies Used
 
-- Python (Socket Programming)
-- Flutter (Mobile Application)
-- Database integration for logging and monitoring
+* Python (Socket Programming)
+* Flutter (Mobile Application)
+* Database for logging and monitoring
