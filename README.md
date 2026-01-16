@@ -40,9 +40,13 @@ This project demonstrates **socket-based communication between a server and a mo
 ## App Screenshots
 
 <p align="center">
-  <img src="mobile-app/screenshots/connect_screen.jpg" width="38%" />
+  <img src="mobile-app/screenshots/connect_screen.jpg"
+       width="38%"
+       style="border: 2px solid #ffffff; border-radius: 8px;" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="mobile-app/screenshots/home_screen.jpg" width="38%" />
+  <img src="mobile-app/screenshots/home_screen.jpg"
+       width="38%"
+       style="border: 2px solid #ffffff; border-radius: 8px;" />
 </p>
 
 <p align="center">
@@ -50,6 +54,7 @@ This project demonstrates **socket-based communication between a server and a mo
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <b>Home Screen</b>
 </p>
+
 
 ---
 
