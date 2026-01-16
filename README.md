@@ -40,12 +40,15 @@ This project demonstrates **socket-based communication between a server and a mo
 ## App Screenshots
 
 <p align="center">
-  <img src="mobile-app/screenshots/connect_screen.jpg" width="45%" />
-  <img src="mobile-app/screenshots/home_screen.jpg" width="45%" />
+  <img src="mobile-app/screenshots/connect_screen.jpg" width="38%" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="mobile-app/screenshots/home_screen.jpg" width="38%" />
 </p>
 
 <p align="center">
-  <b>Connect Screen</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Home Screen</b>
+  <b>Connect Screen</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Home Screen</b>
 </p>
 
 ---
