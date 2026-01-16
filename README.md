@@ -1,6 +1,6 @@
 # Socket-Based System Monitor
 
-A system monitoring project using a **Python socket server** and a **Flutter mobile app**.
+A system monitoring project using a **Python socket server** and a **Flutter mobile app**.  
 The mobile app communicates with the server over a network to fetch and display system information.
 
 ---
@@ -37,6 +37,19 @@ This project demonstrates **socket-based communication between a server and a mo
 
 ---
 
+## App Screenshots
+
+<p align="center">
+  <img src="mobile-app/screenshots/connect_screen.png" width="45%" />
+  <img src="mobile-app/screenshots/home_screen.png" width="45%" />
+</p>
+
+<p align="center">
+  <b>Connect Screen</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Home Screen</b>
+</p>
+
+---
+
 ## Database
 
 * Stores command logs and execution status
@@ -44,20 +57,18 @@ This project demonstrates **socket-based communication between a server and a mo
 * Fully managed by the Python server
 
 ---
-
 ## Communication Flow
 
-1. Mobile app sends a command
-2. Server processes the request
-3. System data/action is executed
-4. Response is sent back
-5. Command is logged in the database
-
+1. Mobile app sends a command  
+2. Server processes the request  
+3. System data/action is executed  
+4. Response is sent back  
+5. Command is logged in the database  
 ---
 
 ## Project Structure
 
-```
+~~~text
 socket-based-system-monitor/
 │
 ├── python-server/
@@ -65,7 +76,7 @@ socket-based-system-monitor/
 │   ├── commands.py      # System command functions
 │   ├── database.py      # Database logic
 │   ├── check_db.py      # Database inspection utility
-│   └── client_test.py  # Socket testing client
+│   └── client_test.py   # Socket testing client
 │
 ├── mobile-app/
 │   ├── lib/
@@ -82,11 +93,14 @@ socket-based-system-monitor/
 │   ├── macos/
 │   ├── web/
 │   ├── assets/
+│   ├── screenshots/
+│   │   ├── connect_screen.png
+│   │   └── home_screen.png
 │   ├── pubspec.yaml
 │   └── .gitignore
 │
 └── README.md
-```
+~~~
 
 ---
 
